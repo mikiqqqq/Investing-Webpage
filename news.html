@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <meta name="description" content="News Page">
+  <meta name="keywords" content="HTML, CSS, JS">
+  <meta name="author" content="Filip Miloš">
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" media="screen" href="css/stylesheet.css">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/b05e340512.js" crossorigin="anonymous"></script>
+  <title>News</title>
+</head>
+<body>
+  <div class="page">
+    <div id="banner-subpage">
+      <header>
+        <nav class="header-nav">
+          <div class="flex-container">
+            <div id="title-div">
+              <a class="homepage-link" href="homepage.html">
+                <img id="icon" src="images/homepage/icon.png" alt="icon"/>
+              </a>
+              <h1 id="home">NEWS</h1>
+            </div>
+
+            <div class="navbar-subpage">
+              <a class="nav-link" href="homepage.html">
+                <p>HOME</p>
+              </a>
+              <a class="nav-link" href="#">
+                <p>NEWS</p>
+              </a>
+              <div class="nav-break"></div>
+              <a class="nav-link" href="about_us.html">
+                <p>ABOUT US</p>
+              </a>
+              <a class="nav-link" href="contact.html">
+                <p>CONTACT</p>
+              </a>
+            </div>
+          </div>
+        </nav>
+      </header>
+    </div>
+
+    <main id="news">
+      <div class="news-start">
+        <a class="top" href="#">
+          <h4 class="news-h4"><i class="fa fa-caret-down"></i> TOP STORY</h4>
+          <img class="" src="images/news/gold.jpg" />
+          <p class="class">Commodities</p>
+
+          <h3>Gold The Best Way to Protect Money from Inflation?</h3>
+          <p class="description">Upcoming inflation is forcing people to buy gold...</p>
+        </a>
+
+        <div class="featured">
+          <h4 class="news-h4">
+            <i class="fa fa-caret-down"></i>
+            <span class="black">READ</span> FEATURED
+        </h4>
+
+          <a class="featured-item" href="#">
+            <img class="slike" src="images/news/bitcoin.jpg" />
+            <p class="class">Crypto</p>
+
+            <h3 class="news-title">Bitcoin Rebounds After Big Crash</h3>
+            <p class="description">After Bitcoin had a big Crash of Wednesday,
+              prices are starting to go back up...</p>
+          </a>
+
+          <a class="featured-item" href="#">
+            <img class="slike" src="images/news/bonds.jpg" />
+            <p class="class">Bonds</p>
+
+            <h3 class="news-title">Apple Increases Dividends</h3>
+            <p class="description">Perfect time to start buying Apple bonds...</p>
+          </a>
+
+          <a class="featured-item" href="#">
+            <img class="slike" src="images/news/eth.jpg" />
+            <p class="class">Crypto</p>
+
+            <h3 class="news-title">Ethereum Hits New All Time High</h3>
+            <p class="description">ETH hits new ATH, but how much further will it go before market correction...</p>
+          </a>
+
+          <a class="featured-item" href="#">
+            <img class="slike" src="images/news/silver.jpg" />
+            <p class="class">Commodities</p>
+            <h3 class="news-title">Silver Prices Will Go Up</h3>
+            <p class="description">It is expected that silver prices will go up 1.5-3% in the next...</p>
+          </a>
+
+        </div>
+      </div>
+
+      <div class="pad">
+        <div class="latest-mark">
+          <h4 class="latest-h4">
+            <i class="fa fa-caret-down"></i>
+            <span class="white">READ</span> LATEST
+        </h4>
+        </div>
+        <div class="latest">
+          <a class="latest-item" href="#">
+            <img class="latest-img" src="images/news/steel.jpeg" />
+            <p class="class">Commodities</p>
+            <h3 class="pad-title">Demand for Steel is Increasing at a High Rate</h3>
+            <p class="pad-description">The demand is high, but there is no supply as...</p>
+          </a>
+          <a class="latest-item" href="#">
+            <img class="latest-img" src="images/news/gamestop.jpg" />
+            <p class="class">Stocks</p>
+            <h3 class="pad-title">GameStop Less Volatile Than Two Months Ago</h3>
+            <p class="pad-description">Is this the actual value of GameStop...</p>
+          </a>
+          <div id="news-break"></div>
+          <a class="latest-item" href="#">
+            <img class="latest-img" src="images/news/cliffs.jpg" />
+            <p class="class">Stocks</p>
+            <h3 class="pad-title">Cleveland Cliffs Stock Drops As the Demand Of Steel Plummets</h3>
+            <p class="pad-description">Steel prices plummet, subsequently "steel" company stocks drop...</p>
+          </a>
+          <a class="latest-item" href="#">
+            <img class="latest-img" src="images/news/ada.jpg" />
+            <p class="class">Crypto</p>
+            <h3 class="pad-title">Is Ada the Best Altcoin to Purchase as of Yet?</h3>
+            <p class="pad-description">Taking a look at Cardano Ada for the past month tells us...</p>
+          </a>
+        </div>
+      </div>
+
+      <div class="other">
+        <nav class="other-nav">
+              <div>
+                <a id="stocks-filter" class="other-link">Stocks</a>
+              </div>
+
+              <div>
+                <a id="crypto-filter" class="other-link">Crypto</a>
+              </div>
+
+              <div>
+                <a id="comm-filter" class="other-link">Commodities</a>
+              </div>
+
+              <div>
+                <a id="bonds-filter" class="other-link">Bonds</a>
+              </div>
+
+              <div>
+                <a id="estate-filter" class="other-link">Real Estate</a>
+              </div>
+        </nav>
+
+        <div class="other-news">
+          <a class="other-item display" href="#">
+            <img class="latest-img" src="images/news/crypto1.jpg" />
+            <p class="class">Crypto</p>
+            <h3 class="news-title">Why a16z’s Marc Andreessen calls the visceral
+              ‘fear and loathing’ of crypto an ‘incredible gift’ to his firm
+            </h3>
+            <p class="description">Blockchain and decentralized finance are
+              poised to unleash the “second half of the internet”...
+            </p>
+          </a>
+
+          <a class="other-item display" href="#">
+            <img class="latest-img" src="images/news/crypto2.jpg" />
+            <p class="class">Crypto</p>
+            <h3 class="news-title">Crypto: Disney Bets on Mark Cuban Protege</h3>
+            <p class="description">Media and entertainment conglomerate Walt
+              Disney ( ) has long remained impervious to the buzzwords metaverse,
+              NFT and crypto...
+            </p>
+          </a>
+
+          <a class="other-item display" href="#">
+            <img class="latest-img" src="images/news/crypto3.jpg" />
+            <p class="class">Crypto</p>
+            <h3 class="news-title">NFT Marketplace OpenSea to Lay Off 20% of Employees</h3>
+            <p class="description">OpenSea, one of the largest marketplaces
+              for nonfungible tokens, said Thursday it would cut a fifth of its staff...
+            </p>
+          </a>
+
+          <a class="other-item display" href="#">
+            <img class="latest-img" src="images/news/crypto4.jpg" />
+            <p class="class">Crypto</p>
+            <h3 class="news-title">As crypto prices crash, some blockchain projects
+              may be struggling to survive</h3>
+            <p class="description">A weekly look at the most important moves
+              and news in crypto and what's on the horizon in digital assets...</p>
+          </a>
+
+          <a class="other-item display" href="#">
+            <img class="latest-img" src="images/news/crypto5.jpg" />
+            <p class="class">Crypto</p>
+            <h3 class="news-title">Crypto Traders Say Inflation Already Priced Into Bitcoin</h3>
+            <p class="description">“It’s the same old devastating and boring
+              accumulation phase,” one trader shared.</p>
+          </a>
+
+          <a class="other-item display" href="#">
+            <img class="latest-img" src="images/news/crypto6.jpg" />
+            <p class="class">Crypto</p>
+            <h3 class="news-title">5 Things to Know in Crypto Today</h3>
+            <p class="description">Cryptocurrency prices have proven
+              surprisingly resilient...</p>
+          </a>
+
+          <a class="other-item display" href="#">
+            <img class="latest-img" src="images/news/crypto7.jpg" />
+            <p class="class">Crypto</p>
+            <h3 class="news-title">MATIC crypto skyrockets as Polygon joins
+              Disney accelerator</h3>
+            <p class="description">Polygon was selected as one of the 2022
+              participants for Disney’s accelerator program...</p>
+          </a>
+
+          <a class="other-item display" href="#">
+            <img class="latest-img" src="images/news/crypto8.jpg" />
+            <p class="class">Crypto</p>
+            <h3 class="news-title">Is Bitcoin Mining Profitable?</h3>
+            <p class="description">Recent changes in technology and the
+              creation of professional mining centers have affected profitability
+              for individual...</p>
+          </a>
+
+          <a class="other-item display" href="#">
+            <img class="latest-img" src="images/news/stocks1.jpg" />
+            <p class="class">Stocks</p>
+            <h3 class="news-title">5 NYSE Stocks To Watch And Buy: Here Are
+              Fundamental And Technical Reasons Why</h3>
+            <p class="description">There's no better time than to build a
+              strong watchlist during a serious market correction...</p>
+          </a>
+
+          <a class="other-item display" href="#">
+            <img class="latest-img" src="images/news/stocks2.jpg" />
+            <p class="class">Stocks</p>
+            <h3 class="news-title">Stock Market Gains Sharply On Retail Numbers
+              Financials Lead</h3>
+            <p class="description">The stock market gained sharply on
+              higher-than-expected retail numbers, led by bank stocks like
+              Citigroup and Wells Fargo...</p>
+          </a>
+
+          <a class="other-item display" href="#">
+            <img class="latest-img" src="images/news/stocks3.jpg" />
+            <p class="class">Stocks</p>
+            <h3 class="news-title">Wall Street’s Calls on Chip Makers’ Earnings
+              Are Way Too High, Goldman Warns</h3>
+            <p class="description">As macroeconomic conditions worsen,
+              semiconductor manufacturers will perform less well financially,
+              analyst Toshiya Hari says...</p>
+          </a>
+
+          <a class="other-item display" href="#">
+            <img class="latest-img" src="images/news/stocks4.jpg" />
+            <p class="class">Stocks</p>
+            <h3 class="news-title">Stock Market Trades Near Session Highs As Data
+              Indicates Inflation Cools</h3>
+            <p class="description">Markets continued to rally after a positive
+               start this morning, and the major stock market indexes...</p>
+          </a>
+
+          <a class="other-item" href="#">
+            <img class="latest-img" src="images/news/stocks5.jpg" />
+            <p class="class">Stocks</p>
+            <h3 class="news-title">Amazon Stock: Prime Is About to Get Stickier</h3>
+            <p class="description">E-commerce titan Amazon (AMZN) unveiled
+              some pretty exciting innovations...</p>
+          </a>
+
+          <a class="other-item" href="#">
+            <img class="latest-img" src="images/news/stocks6.jpg" />
+            <p class="class">Stocks</p>
+            <h3 class="news-title">Livent (LTHM) Gains But Lags Market: What
+              You Should Know</h3>
+            <p class="description">Livent (LTHM) closed the most recent
+              trading day at $20.24, moving +0.7% from the previous trading session...</p>
+          </a>
+
+          <a class="other-item" href="#">
+            <img class="latest-img" src="images/news/stocks7.jpg" />
+            <p class="class">Stocks</p>
+            <h3 class="news-title">Consolidated Edison (ED) Gains But Lags Market:
+              What You Should Know</h3>
+            <p class="description">In the latest trading session, Consolidated
+              Edison (ED) closed at $93.40, marking a +0.6% move from the previous day. </p>
+          </a>
+
+          <a class="other-item" href="#">
+            <img class="latest-img" src="images/news/stocks8.jpg" />
+            <p class="class">Stocks</p>
+            <h3 class="news-title">Stocks end higher on Wall Street, still down
+              for the week</h3>
+            <p class="description">Wall Street capped a week of losses with a
+              broad rally for stocks Friday, as investors welcomed solid earnings...</p>
+          </a>
+
+          <a class="other-item" href="#">
+            <img class="latest-img" src="images/news/real_estate1.jpg" />
+            <p class="class">Real Estate</p>
+            <h3 class="news-title">Are REITs a Good Alternative to Investing in
+              Physical Real Estate?</h3>
+            <p class="description">You’ve been watching the cost of homes and
+              rents steadily rise since the end of 2020...</p>
+          </a>
+
+          <a class="other-item" href="#">
+            <img class="latest-img" src="images/news/real_estate2.jpg" />
+            <p class="class">Real Estate</p>
+            <h3 class="news-title">Sellers need to be ‘realistic’ about price, says broker</h3>
+            <p class="description">After the frenzy of bidding wars, the U.S.
+              housing market is starting to cool...</p>
+          </a>
+
+          <a class="other-item" href="#">
+            <img class="latest-img" src="images/news/real_estate3.jpg" />
+            <p class="class">Real Estate</p>
+            <h3 class="news-title">China’s housing demand set to drop as the
+              population ages, real estate broker predicts</h3>
+            <p class="description">BEIJING — China’s massive residential real
+              estate market is only going to see demand drop over the next 15 years...</p>
+          </a>
+
+          <a class="other-item" href="#">
+            <img class="latest-img" src="images/news/real_estate4.jpg" />
+            <p class="class">Real Estate</p>
+            <h3 class="news-title">Moves that homebuyers can still make to find a
+              lower mortgage rate</h3>
+            <p class="description">After dropping to record lows in 2020 and
+              2021, mortgage rates are back up...</p>
+          </a>
+
+          <a class="other-item" href="#">
+            <img class="latest-img" src="images/news/commodities1.jpg" />
+            <p class="class">Commodities</p>
+            <h3 class="news-title">The Era of Expensive Oil Is Here to Stay</h3>
+            <p class="description">Even as prices drop to a three-month low,
+              the world is still struggling to produce all the oil it needs...</p>
+          </a>
+
+          <a class="other-item" href="#">
+            <img class="latest-img" src="images/news/commodities2.jpg" />
+            <p class="class">Commodities</p>
+            <h3 class="news-title">Citi Beats Estimates With Trading Revenue,
+              Pauses Buybacks</h3>
+            <p class="description">Citigroup Inc. is collecting a windfall
+              from tumultuous international markets...</p>
+          </a>
+
+          <a class="other-item" href="#">
+            <img class="latest-img" src="images/news/commodities3.jpg" />
+            <p class="class">Commodities</p>
+            <h3 class="news-title">London Court to Decide Who Controls $1 Billion
+              of Venezuelan Gold</h3>
+            <p class="description">A London court is finally set to decide
+              who controls more than $1 billion of Venezuelan gold...</p>
+          </a>
+
+          <a class="other-item" href="#">
+            <img class="latest-img" src="images/news/commodities4.jpg" />
+            <p class="class">Commodities</p>
+            <h3 class="news-title">Improving Platinum Outlook Outweighed by Weaker
+              Sister Metals</h3>
+            <p class="description">As recession fears stymie the auto sector's
+              recovery from supply-chain disruptions, miners face a number of headwinds...</p>
+          </a>
+
+          <a class="other-item" href="#">
+            <img class="latest-img" src="images/news/bonds1.jpg" />
+            <p class="class">Bonds</p>
+            <h3 class="news-title">Bond yields slip, key yield curve inversion narrows</h3>
+            <p class="description">A key Treasury yield curve inversion narrowed
+              on Friday, after hitting its steepest level since 2000 the previous day...</p>
+          </a>
+
+          <a class="other-item" href="#">
+            <img class="latest-img" src="images/news/bonds2.jpg" />
+            <p class="class">Bonds</p>
+            <h3 class="news-title">Lawmaker urges Yellen, Treasury Department to
+              remove ‘red tape’ for Series I bonds</h3>
+            <p class="description">As the cost of living soars, one federal
+              lawmaker wants to remove any barriers to buying Series I bonds...</p>
+          </a>
+
+          <a class="other-item" href="#">
+            <img class="latest-img" src="images/news/bonds3.jpg" />
+            <p class="class">Bonds</p>
+            <h3 class="news-title">Experts weigh in on 3 tricky questions about
+              Series I bonds</h3>
+            <p class="description">The demand for Series I bonds, an i
+              nflation-protected and nearly risk-free asset, has skyrocketed...</p>
+          </a>
+
+          <a class="other-item" href="#">
+            <img class="latest-img" src="images/news/bonds4.jpg" />
+            <p class="class">Bonds</p>
+            <h3 class="news-title">10-year Treasury yield jumps back above 3%,
+              key recession warning still in place</h3>
+            <p class="description">U.S. Treasury yields rose sharply on Thursday,
+              extending gains even as the closely watched 2-year/10-year yield curve...</p>
+          </a>
+      </div>
+
+        <button id="read_more-button" type="button" name="button">Read more</button>
+      </div>
+</main>
+
+<footer id="contact-footer">
+  <table id="contact-footer-table">
+    <tr class="gray">
+      <td>Author</td>
+      <td>Category</td>
+      <td>Made with</td>
+    </tr>
+    <tr>
+      <td>Filip Miloš</td>
+      <td>UI Design</td>
+      <td>HTML</td>
+    </tr>
+    <tr>
+      <td>April 20, 2021</td>
+      <td></td>
+      <td>CSS, JS</td>
+    </tr>
+  </table>
+  <hr id="footer-line">
+  <p class="gray" id="copyright">Copyright &#169; 2021 All Rights Reserved (Investing)</p>
+</footer>
+</div>
+
+<script type="text/javascript" src="js/news-script.js"></script>
+</body>
+</html>
