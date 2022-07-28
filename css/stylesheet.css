@@ -870,7 +870,11 @@ textarea{
 #submit:hover{
   background-color: rgba(215, 215, 215, 1);
   cursor: pointer;
-  color: #0F1325;
+}
+
+textarea, input, select{
+  border: 2px solid lightblue;
+  min-height: 20px;
 }
 
 #line-box {
@@ -945,7 +949,7 @@ h2#or{
     transform: translateX(-50%);
     font-family: Verdana;
     border-spacing: 10px;
-    white-space: nowrap;
+  white-space: nowrap;
 }
 
 .first-col{
