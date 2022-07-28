@@ -1403,7 +1403,7 @@ h2.team {
 
 .other-item{
   display: none;
-  width: 320px;
+  width: 300px;
   padding: 20px;
   text-decoration: none;
 }
@@ -1438,7 +1438,7 @@ h2.team {
   text-decoration: underline;
 }
 
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1520px) {
   /* #introduction{
     margin-top: 5px;
   }
@@ -1567,6 +1567,21 @@ h2.team {
   }
 }
 
+@media screen and (max-width: 1380px){
+  h2{
+    font-size: 4em;
+    margin: 40px;
+  }
+
+  h3{
+    font-size: 1.6em;
+  }
+
+  .line-break{
+    height: 2vh;
+  }
+}
+
 @media screen and (max-width: 1310px) {
   #introduction{
     margin-top: 5px;
@@ -1661,14 +1676,6 @@ h2.team {
 
       .nav-link:first-child{
         border: none;
-      }
-
-      h2{
-        font-size: 4.3em;
-      }
-
-      h3{
-        font-size: 1.8em;
       }
 
       .flex-container{
