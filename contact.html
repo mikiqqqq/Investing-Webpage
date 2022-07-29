@@ -47,11 +47,13 @@
 
       <div id="main-form">
         <div class="frames">
-          <iframe id="map1"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2781.8860822544284!2d16.021225115740265!3d45.793509919429866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4765d6212dae94cf%3A0xa7a53b20d04bba7!2sRadni%C4%8Dka%20cesta%20184%2C%2010000%2C%20Zagreb!5e0!3m2!1shr!2shr!4v1623071187978!5m2!1shr!2shr"
+          <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d449.31702262558883!2d-73.98086855010524!3d40.74810940992438!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259070e81a191%3A0x75a72cd992279ecb!2s71%20E%2035th%20St%2C%20New%20York%2C%20NY%2010016%2C%20USA!5e0!3m2!1sen!2shr!4v1659096993836!5m2!1sen!2shr"
           width="100%" height="100%"
           style="border: 2px solid #0F1325; box-shadow: 0 3px 20px 10px #0000003b;"
-          allowfullscreen="" loading="lazy"></iframe>
+          allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
         </div>
 
         <form>
@@ -101,22 +103,27 @@
               <td colspan="2">
                 More details: <br /><br />
                 <textarea name="details"
-                placeholder="More details about why you're reaching out..."></textarea>
+                placeholder="More details about why you're reaching out...">
+                </textarea>
               </td>
             </tr>
 
             <tr>
-              <td colspan="2" id="submit-button"><input type="submit" name="ok" /></td>
+              <td colspan="2" id="submit-button">
+                <input id="submit" type="submit" name="ok" value="Submit"/>
+              </td>
             </tr>
           </table>
         </form>
 
         <div class="frames">
-          <iframe id="map2"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2780.7175301200596!2d16.02130821574092!3d45.816915217859076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4765d7cf7064d0c7%3A0x2b3696f3188d6525!2sAleksandra%20Hondla%2034%2C%2010000%2C%20Zagreb!5e0!3m2!1shr!2shr!4v1623071358874!5m2!1shr!2shr"
+          <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1218.329488061689!2d4.911514844238184!3d52.35847014267003!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c6099b99f839bf%3A0x9f78a704b004b551!2sTilanusstraat%20371%2C%201091%20BD%20Amsterdam%2C%20Netherlands!5e0!3m2!1sen!2shr!4v1659097235196!5m2!1sen!2shr"
           width="100%" height="100%"
           style="border: 2px solid #0F1325; box-shadow: 0 3px 20px 10px #0000003b;"
-          allowfullscreen="" loading="lazy"></iframe>
+          allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
         </div>
       </div>
 
@@ -153,7 +160,9 @@
         </tr>
       </table>
       <hr id="footer-line">
-      <p class="gray" id="copyright">Copyright &#169; 2021 All Rights Reserved (Investing)</p>
+      <p class="gray" id="copyright">
+        Copyright &#169; 2021 All Rights Reserved (Investing)
+      </p>
     </footer>
   </div>
 </body>

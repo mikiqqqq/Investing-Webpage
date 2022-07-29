@@ -7,7 +7,6 @@ if(newsArticles.length > 12){
 }
 
 document.getElementById('read_more-button').addEventListener('click', event => {
-
   for(let i = ct; i < ct + 8; i++){
     if(newsArticles.length - 1 == i){
       newsArticles[i].style.display = 'block';
@@ -21,7 +20,7 @@ document.getElementById('read_more-button').addEventListener('click', event => {
 });
 
 function resetAllFiltersStyle(){
-  for(var i = 0; i < links.length; i++){
+  for(let i = 0; i < links.length; i++){
     links[i].style.backgroundColor = "transparent";
     links[i].style.color = "white";
     links[i].style.pointerEvents = "auto";
@@ -36,7 +35,7 @@ function changeButtonStyle(filter){
 }
 
 function filterArticlesAndAppend(keyword){
-  for (var i = 0; i < newsArticles.length; i++) {
+  for (let i = 0; i < newsArticles.length; i++) {
     newsArticles[i].style.display = 'none';
     var newsType = newsArticles[i].querySelector('.class').innerHTML;
     if(newsType == keyword){

@@ -5,9 +5,9 @@ var banner_height, intro_height;
 var slider = document.getElementById('image-container');
 var sliderWidth = document.getElementById('slider').offsetWidth;
 var boxes = document.getElementsByClassName('box');
- for (var i=0; i < boxes.length; i++) {
-   boxes[i].style.width = sliderWidth + "px";
- }
+for (let i = 0; i < boxes.length; i++) {
+  boxes[i].style.width = sliderWidth + 'px';
+}
 var leftAmount = sliderWidth;
 
 // Disable & Enable Scroll
@@ -30,7 +30,7 @@ function preventDefaultForScrollKeys(e) {
 // modern Chrome requires { passive: false } when adding event
 var supportsPassive = false;
 try {
-  window.addEventListener("test", null, Object.defineProperty({}, 'passive', {
+  window.addEventListener('test', null, Object.defineProperty({}, 'passive', {
     get: function () { supportsPassive = true; }
   }));
 } catch(e) {}
@@ -58,41 +58,42 @@ function enableScroll() {
 let displayed = false;
 var button = document.getElementById('button');
 function appear(elm, i, step, speed){
-    var t_o;
-    //initial opacity
-    i = i || 0;
-    //opacity increment
-    step = step || 5;
-    //time waited between two opacity increments in msec
-    speed = speed || 50;
+  var t_o;
+  //initial opacity
+  i = i || 0;
+  //opacity increment
+  step = step || 5;
+  //time waited between two opacity increments in msec
+  speed = speed || 50;
 
-    t_o = setInterval(function(){
-        //get opacity in decimals
-        var opacity = i / 100;
-        //set the next opacity step
-        i = i + step;
-        if(opacity > 1 || opacity < 0){
-            clearInterval(t_o);
-            //if 1-opaque or 0-transparent, stop
-            if(!displayed){
-              button.style.display = "none";
-            }
-            return;
-        }
-        //modern browsers
-        elm.style.opacity = opacity;
-        //older IE
-        elm.style.filter = 'alpha(opacity=' + opacity*100 + ')';
-    }, speed);
+  t_o = setInterval(function(){
+    //get opacity in decimals
+    var opacity = i / 100;
+    //set the next opacity step
+    i = i + step;
+    if(opacity > 1 || opacity < 0){
+      clearInterval(t_o);
+      //if 1-opaque or 0-transparent, stop
+      if(!displayed){
+        button.style.display = 'none';
+      }
+      return;
+    }
+    //modern browsers
+    elm.style.opacity = opacity;
+    //older IE
+    elm.style.filter = 'alpha(opacity=' + opacity*100 + ')';
+  }, speed);
 }
 var counter = 0;
 
+// Do whatever depending on resize
 function resize(){
   if(window.availHeight == screen_height){
     document.getElementById('banner').style.height = banner_height;
   }
   if(window.innerWidth != screen_width){
-    document.getElementById('banner').style.height = "fit-content";
+    document.getElementById('banner').style.height = 'fit-content';
   }
 
   AA = window.outerWidth;
@@ -100,13 +101,13 @@ function resize(){
 
   if ((A == AA && B == BB) || BB >= B) {
     screen_height = window.innerHeight;
-    banner_height = 0.90 * screen_height + "px";
-    intro_height = 0.10 * screen_height + "px";
+    banner_height = 0.90 * screen_height + 'px';
+    intro_height = 0.10 * screen_height + 'px';
     document.getElementById('banner').style.height = banner_height;
     document.getElementById('intro-quote').style.height = intro_height;
 
     if(AA < A/2){
-      document.getElementById('banner').style.height = "fit-content";
+      document.getElementById('banner').style.height = 'fit-content';
     }
   }else{
     displayed = false;
@@ -114,14 +115,14 @@ function resize(){
   }
 
   if(!executing){
-  slider = document.getElementById('image-container');
-  sliderWidth = document.getElementById('slider').offsetWidth;
-  boxes = document.getElementsByClassName('box');
-   for (var i=0; i < boxes.length; i++) {
-     boxes[i].style.width = sliderWidth + "px";
-   }
-  leftAmount = sliderWidth;
-}
+    slider = document.getElementById('image-container');
+    sliderWidth = document.getElementById('slider').offsetWidth;
+    boxes = document.getElementsByClassName('box');
+    for (let i = 0; i < boxes.length; i++) {
+      boxes[i].style.width = sliderWidth + 'px';
+    }
+    leftAmount = sliderWidth;
+  }
 }
 
 
@@ -130,61 +131,62 @@ const duration = 500;
 let scrolled = true;
 
 const scrollToTarget = function () {
-    scrolled = false;
-    disableScroll();
-    const top = window.innerHeight;
+  scrolled = false;
+  disableScroll();
+  const top = window.innerHeight;
 
 
-    let startTime = null;
-    let requestId;
+  let startTime = null;
+  let requestId;
 
-    const loop = function (currentTime) {
-        if (!startTime) {
-            startTime = currentTime;
-        }
+  const loop = function (currentTime) {
+    if (!startTime) {
+      startTime = currentTime;
+    }
 
-        // Elapsed time in miliseconds
-        const time = currentTime - startTime;
+    // Elapsed time in miliseconds
+    const time = currentTime - startTime;
 
-        const percent = Math.min(time / duration, 1);
-        window.scrollTo(0, top * percent);
+    const percent = Math.min(time / duration, 1);
+    window.scrollTo(0, top * percent);
 
-        if (time < duration) {
-            // Continue moving
-            requestId = window.requestAnimationFrame(loop);
-        } else {
-            window.cancelAnimationFrame(requestId);
-            scrolled = true;
-            enableScroll();
-        }
-    };
-    requestId = window.requestAnimationFrame(loop);
+    if (time < duration) {
+      // Continue moving
+      requestId = window.requestAnimationFrame(loop);
+    } else {
+      window.cancelAnimationFrame(requestId);
+      scrolled = true;
+      enableScroll();
+    }
+  };
+  requestId = window.requestAnimationFrame(loop);
 };
 
 // Automatic News Slider
 function wait500ms(){
-  slider.style.transition = "left 2s";
+  slider.style.transition = 'left 2s';
 }
 
 function automaticSlider(){
   executing = true;
   if(counter == 4) {
-    slider.style.transition = "none";
+    slider.style.transition = 'none';
     counter= 0;
     leftAmount = sliderWidth;
     setTimeout(wait500ms, 500);
   }
   counter ++;
-  console.info("switching naturally " + counter);
   leftAmount -= sliderWidth;
   executing = false;
   setTimeout(function(){
     automaticSlider();
   }, 5000);
-  slider.style.left = leftAmount + "px";
+  slider.style.left = leftAmount + 'px';
 }
 
 window.addEventListener('resize', resize);
+
+// Set Introduction page proportions
 var A = screen.availWidth;
 var AA = window.outerWidth;
 
@@ -193,21 +195,25 @@ var BB = window.outerHeight;
 
 if ((A == AA && B == BB) || BB >= B) {
   screen_height = window.innerHeight;
-  banner_height = 0.90 * screen_height + "px";
-  intro_height = 0.10 * screen_height + "px";
+  banner_height = 0.90 * screen_height + 'px';
+  intro_height = 0.10 * screen_height + 'px';
   document.getElementById('banner').style.height = banner_height;
   document.getElementById('intro-quote').style.height = intro_height;
 }else{
-  document.getElementById('intro-quote').style.height = "20vh";
+  document.getElementById('intro-quote').style.height = '10vh';
 }
 
-window.addEventListener("load", () => {
+// Detect mobile device
+window.addEventListener('load', () => {
   var isMobile = navigator.userAgent.toLowerCase().match(/mobile/i);
 
   if (isMobile) {
-    document.getElementById('banner').style.height = "100vh";
-    console.log("Is mobile device"); }
-  else { console.log("Not mobile device"); }
+    document.getElementById('banner').style.height = '100vh';
+    console.log('Is mobile device');
+  }
+  else {
+    console.log('Not mobile device');
+  }
 });
 
 // Check if we're on the top of the page and height is max
@@ -216,37 +222,47 @@ if(window.scrollY == 0 && BB >= B){
 }
 
 // Check if read more was clicked
-document.getElementById('read').addEventListener("click", () => {
+document.getElementById('read').addEventListener('click', () => {
   enableScroll();
 });
 
-// Track scroll amount
+
+// Enable scroll if arrow down key was pressed
+window.addEventListener('keydown', e => {
+  if(e.keyCode == 40 && window.scrollY == 0){
+    if(scrolled) scrollToTarget();
+  }
+});
+
+// Track scroll amount and enable scrolling after 3 scrolls
 var wheelScrolls = 0;
-window.addEventListener("wheel", event => {
-    const delta = Math.sign(event.deltaY);
-    if(delta == 1){
-      wheelScrolls++;
-      console.info("scrolls: " + wheelScrolls);
-      if(wheelScrolls >= 3 && window.scrollY == 0){
-        if(scrolled) scrollToTarget();
-      }
+window.addEventListener('wheel', e => {
+  const delta = Math.sign(event.deltaY);
+  if(delta == 1){
+    wheelScrolls++;
+    if(wheelScrolls >= 3 && window.scrollY == 0){
+      if(scrolled) scrollToTarget();
     }
-    console.info(delta);
+  }
+  if(window.scrollY != 0 && scrolled){
+    enableScroll();
+    scrolled = true;
+  }
 });
 
 automaticSlider();
 
 // Back to top button
-button.style.display = "none";
-button.style.opacity = "0";
+button.style.display = 'none';
+button.style.opacity = '0';
 window.addEventListener('scroll', function () {
-    if(window.scrollY >= 2*window.innerHeight && displayed == false && (AA >= A/2 && BB>=B)){
-      displayed = true;
-      button.style.display = "block";
-      appear(button, 0, 3, 40);
-    }
-    if(window.scrollY < 2*window.innerHeight && displayed == true){
-      displayed = false;
-      appear(button, 100, -3, 40);
-    }
+  if(window.scrollY >= 2*window.innerHeight && displayed == false && (AA >= A/2 && BB>=B)){
+    displayed = true;
+    button.style.display = 'block';
+    appear(button, 0, 3, 40);
+  }
+  if(window.scrollY < 2*window.innerHeight && displayed == true){
+    displayed = false;
+    appear(button, 100, -3, 40);
+  }
 });
