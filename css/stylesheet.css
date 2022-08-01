@@ -27,7 +27,7 @@ header{
   display: flex;
   position: relative;
   top: 0px;
-  background-image: url('../images/homepage/banner.jpg');
+  background-image: url('../images/homepage/banner.webp');
   width: 100%;
   flex-direction: column;
   min-height: fit-content;
@@ -772,7 +772,7 @@ li{
 #banner-subpage {
   box-sizing: border-box;
   position: relative;
-  background-image: url('../images/homepage/banner.jpg');
+  background-image: url('../images/homepage/banner.webp');
   width: 100%;
   height: 140px;
   background-size: cover;
@@ -840,14 +840,14 @@ li{
 
 form{
   position: relative;
-  height: 80vh;
+  height: 600px;
   top: 30px;
   width: 50vw;
   padding-bottom: 45px;
 }
 
 #contact-table {
-  background-image: url('../images/contact/background.jpeg');
+  background-image: url('../images/contact/background.webp');
   background-size: cover;
   background-color: #0F1325;
   box-shadow: 0 3px 20px 10px #0000003b;
@@ -857,6 +857,14 @@ form{
   height: 100%;
   width: 100%;
   border: 3px solid white;
+}
+
+#contact-table td{
+  height: 25px;
+}
+
+.textarea-td{
+  padding-top: 25px;
 }
 
 textarea{
@@ -1595,6 +1603,15 @@ h2.team {
 @media screen and (max-width: 1280px) {
   #main-form{
     display: block;
+    width: 80%;
+  }
+
+  form{
+    width: 100%;
+  }
+
+  .frames{
+    display: none;
   }
 
   .line-break{
