@@ -675,7 +675,7 @@ h6{
 }
 
 #stock_market{
-  background-image: url('../images/homepage/stock_market.jpg');
+  background-image: url('../images/homepage/stock_market.webp');
   width: 450px;
   height: 270px;
   background-size: 100% 100%;
@@ -686,7 +686,7 @@ h6{
 }
 
 #crypto{
-  background-image: url('../images/homepage/crypto.jpeg');
+  background-image: url('../images/homepage/crypto.webp');
   width: 450px;
   height: 270px;
   background-size: 100% 100%;
@@ -697,7 +697,7 @@ h6{
 }
 
 #commodities{
-  background-image: url('../images/homepage/comm.jpg');
+  background-image: url('../images/homepage/comm.webp');
   width: 450px;
   height: 270px;
   background-size: 100% 100%;
@@ -708,7 +708,7 @@ h6{
 }
 
 #bonds{
-  background-image: url('../images/homepage/bond.jpg');
+  background-image: url('../images/homepage/bond.webp');
   width: 450px;
   height: 270px;
   background-size: 100% 100%;
@@ -719,7 +719,7 @@ h6{
 }
 
 #estate{
-  background-image: url('../images/homepage/estate.jpg');
+  background-image: url('../images/homepage/estate.webp');
   width: 450px;
   height: 270px;
   background-size: 100% 100%;
@@ -1266,7 +1266,7 @@ h2.team {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 429px;
+  height: 457px;
 }
 
 .featured-item{
@@ -1276,8 +1276,8 @@ h2.team {
 }
 
 .featured-item > img{
-  height: 80px;
-  width: 120px;
+  height: 90px;
+  width: 130px;
   float: left;
 }
 
