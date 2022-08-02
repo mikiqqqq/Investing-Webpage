@@ -297,16 +297,18 @@ a:hover#icon_stocks, a:active#icon_stocks{
   width: 100%;
 }
 
+#start{
+  display: flex;
+}
+
 .start-one{
-  display: inline-block;
   width: 75%;
   height: 100%;
   background-color: lightcyan;
 }
 
 .start-two{
-  display: inline-block;
-  width: 24%;
+  width: 25%;
   height: 100%;
   background-color: lightblue;
 }
@@ -334,11 +336,18 @@ h4{
   margin: 0;
 }
 
-.page{
+.page, .home-page{
   display: flex;
   flex-direction: column;
   height: 100%;
+}
+
+.page{
   background-color: lightblue;
+}
+
+.home-page{
+  background-color: #0F1325;
 }
 
 .wrapper{
@@ -362,6 +371,7 @@ h4{
   padding-bottom: 35px;
   box-shadow: 0 9px 0px 0px lightblue, 0 -9px 0px 0px lightblue, 0 -9px 0px 0px lightblue, -12px 0 15px -4px rgba(0,0,0,0.2);
   font-family: Gotham,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Droid Sans,Helvetica Neue,sans-serif;
+  background-color: lightblue;
 }
 
 .sticky-sidebar{
