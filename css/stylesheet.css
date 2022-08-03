@@ -850,7 +850,7 @@ li{
 
 form{
   position: relative;
-  height: 600px;
+  min-height: 600px;
   top: 30px;
   width: 50vw;
   padding-bottom: 45px;
@@ -1748,8 +1748,11 @@ h2.team {
   }
 
   .team-right{
+    border: 0;
+    border-top: 5px solid white;
     width: 100%;
     padding: 35px 10% 35px 10%;
+    box-shadow: 0 3px 10px 0 #0000003b;
   }
 
   .about-box{
@@ -1888,6 +1891,18 @@ h2.team {
 }
 
 @media screen and (max-width: 510px) {
+  .featured-item > img {
+    margin-bottom: 40px;
+  }
+
+  .news-title {
+    font-size: 1.1em;
+}
+
+.description {
+    font-size: 0.8em;
+}
+
   h2{
     font-size: 3em;
   }
@@ -1913,6 +1928,10 @@ h2.team {
     max-width: 28vw;
     font-size: 4vw;
     padding: 3vw 4vw;
+  }
+
+  .interest-table{
+    font-size: 0.9em;
   }
 }
 
@@ -1959,6 +1978,14 @@ h2.team {
     font-size: 3.5em;
     color: white;
     text-decoration: none;
+  }
+
+  .first-col {
+    font-size: 0.9em;
+  }
+
+  .interest-table{
+    font-size: 0.8em;
   }
 }
 
