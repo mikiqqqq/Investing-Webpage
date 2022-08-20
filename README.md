@@ -22,5 +22,9 @@ The website is responsive and displays well on all devices. The loading time is 
 * Responsivity handled with CSS flexbox
 * User experience improved with vanilla javascript
 
+## THIRD-PARTY FONT SCRIPTS
+* Google Fonts
+* Font Awesome
+
 ## POSSIBLE IMPROVEMENTS:
 * Images can be condensed a bit further
