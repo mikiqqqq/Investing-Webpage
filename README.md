@@ -3,8 +3,6 @@
 Feel free to check out the demo deployed here on Github:  
 https://mikiqqqq.github.io/Investing-Website/homepage.html
 
-State of Project: Completed
-
 ## SUMMARY:
 Plain old (but modern-looking!) website made with vanilla CSS and Javascript.
 
